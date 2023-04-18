@@ -1,0 +1,103 @@
+{
+  "name": "cli-study",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "design": "npm run serve -- --design"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cookie": "^0.4.2",
+    "core-js": "^3.6.5",
+    "crypto-js": "^3.3.0",
+    "md5": "^2.2.1",
+    "three": "^0.146.0",
+    "unplugin-vue-components": "^0.17.18",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "css-loader": "^5.0.1",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "node-cmd": "^5.0.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-extend": "^1.0.5",
+    "postcss-import": "^12.0.1",
+    "postcss-mixins": "^6.2.1",
+    "postcss-nested": "^4.1.2",
+    "postcss-pxtorem": "^4.0.1",
+    "postcss-simple-vars": "^5.0.2",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^2.0.0",
+    "yargs": "^16.2.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "no-undef": 0,
+      "no-use-before-define": 0,
+      "no-unused-vars": [
+        0,
+        {
+          "vars": "all",
+          "args": "after-used"
+        }
+      ]
+    }
+  },
+  "postcss": {
+    "use": [
+      "autoprefixer",
+      "postcss-import",
+      "postcss-simple-vars",
+      "postcss-extend",
+      "postcss-nested",
+      "postcss-mixins"
+    ],
+    "plugins": {
+      "autoprefixer": {},
+      "postcss-cssnext": {},
+      "postcss-pxtorem": {
+        "rootValue": 16,
+        "unitPrecision": 5,
+        "propList": [
+          "font",
+          "font-size",
+          "line-height",
+          "letter-spacing"
+        ],
+        "selectorBlackList": [],
+        "replace": true,
+        "mediaQuery": false,
+        "minPixelValue": 0
+      }
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
